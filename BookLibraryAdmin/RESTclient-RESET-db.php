@@ -10,16 +10,6 @@ function handleRESTAPIResetResponse(restAPIResponseJSON, obj, verb) {
     libraryResetDataLabel.innerHTML = libraryDataLabelText;
     const rawResetResponseJSONContainer = document.getElementById("rawResetResponseJSONContainer");
     rawResetResponseJSONContainer.innerHTML = jsonResponseToString(restAPIResponseJSON);
-
-    const libraryResetDataTableLabel = document.getElementById("libraryResetDataTableLabel");
-    libraryResetDataTableLabel.innerHTML = `<u>${obj}</u> Data Grid:`;
-    const libraryResetDataTableContainer = document.getElementById("libraryResetDataTableContainer");
-    libraryResetDataTableContainer.innerHTML = "<table id='libraryResetDataTable' class='display' style='width:100%''><tr><td>No Results</td></tr></table>";
-    var tbl = $("#libraryResetDataTable")
-    tbl.DataTable ({
-        "data" : restAPIResponseJSON["records"],
-        "columns" : restAPIResponseJSON["columns"]
-    });
 }
 
 function handleRESTAPIResetError(xhr, obj, verb) {
@@ -49,9 +39,3 @@ function resetDatabase() {
 <div>
     <pre id="rawResetResponseJSONContainer"></pre>
 </div>
-
-<p><br><br>
-<h2 id="libraryResetDataTableLabel"></h2>
-<!-- DataTables: BEGIN -->
-<div id="libraryResetDataTableContainer"></div>
-<!-- DataTables: END -->

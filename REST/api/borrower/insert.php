@@ -7,8 +7,8 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 // include database and object files
-include_once $_SERVER['DOCUMENT_ROOT'].'/DF/REST/database/db.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/DF/REST/api/objects/borrower.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/PHP-REST/REST/database/db.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/PHP-REST/REST/api/objects/borrower.php';
 
 // instantiate database and product object
 $dbmgr = new LibraryDBManager();

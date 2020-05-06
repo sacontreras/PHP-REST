@@ -1,7 +1,7 @@
 <?php
 class LibraryDBManager {
    private $sqlite_db_fname = 'booklibrary.db';
-   private $sqlite_db_path = 'DF/db-sqlite';
+   private $sqlite_db_path = 'PHP-REST/db-sqlite';
    private $sqlite_db_root_dir;
    private $sqlite_db_full_path;
    private $create_db_sql_fname = 'createdb-batch.sql';

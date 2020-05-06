@@ -4,8 +4,8 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
 // include database and object files
-include_once $_SERVER['DOCUMENT_ROOT'].'/DF/REST/database/db.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/DF/REST/api/objects/book.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/PHP-REST/REST/database/db.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/PHP-REST/REST/api/objects/book.php';
   
 // instantiate database and product object
 $dbmgr = new LibraryDBManager();

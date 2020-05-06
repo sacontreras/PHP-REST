@@ -1,6 +1,6 @@
 var recurrent = false;
 var updateFrequency = 5000;
-var rootEndpoint = "http://localhost:8080/DF/REST/api";
+var rootEndpoint = "http://localhost:8080/PHP-REST/REST/api";
     
 function buildRESTEndpoint(obj, verb) {
     return `${rootEndpoint}/${obj}/${verb}.php`;
