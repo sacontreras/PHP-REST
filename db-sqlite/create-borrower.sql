@@ -1,0 +1,9 @@
+CREATE TABLE Borrower
+(
+LibraryCardID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+Name TEXT,
+Address TEXT,
+PostalCode TEXT,
+PhoneNumber TEXT(10),
+MembershipDate INTEGER
+);

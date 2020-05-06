@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>CS 3305 - Unit 4: REST Example</title>
+
+        <style>
+            pre {
+                width: 100%;
+                height: 400px;
+                display: inline-block; 
+                border:2px solid Black;
+                overflow: auto;
+                background-color: #eeeeee;
+                word-break: normal !important;
+                word-wrap: normal !important;
+                white-space: pre !important;
+                overflow-y: scroll;
+            }​
+        </style>
+
+        <!-- SlickGrid: BEGIN --> <!-- just because I like this style -->
+        <link rel="stylesheet" href="./lib/SlickGrid/slick.grid.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/smoothness/jquery-ui.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/examples.css" type="text/css"/>
+        <!-- SlickGrid: END -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+        </script>
+    </head>
+
+    <body>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">READ</a></li>
+                <li><a href="#tabs-2">INSERT</a></li>
+                <li><a href="#tabs-3">DELETE</a></li>
+                <li><a href="#tabs-4">RESET DATABASE</a></li>
+            </ul>
+            <div id="tabs-1">
+                <?php require 'RESTclient-read.php'; ?>
+            </div>
+            <div id="tabs-2">
+                <?php require 'RESTclient-insert.php'; ?>
+            </div>
+            <div id="tabs-3">
+                <?php require 'RESTclient-delete.php'; ?>
+            </div>
+            <div id="tabs-4">
+                <?php require 'RESTclient-RESET-db.php'; ?>
+            </div>
+        </div>
+    </body>
+</html>
